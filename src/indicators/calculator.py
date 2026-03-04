@@ -1,7 +1,7 @@
 """
 ImpactTracker - Indicator Calculation Engine
 Automates logframe-based indicator tracking for humanitarian programs.
-Author: Tresor | MSc Data Science & AI, DSTI
+Author: Serge Nyamsin | MSc Data Science & AI, DSTI
 """
 
 import pandas as pd
@@ -48,7 +48,7 @@ class LogframeEngine:
     }
 
     def __init__(self, config_path: str):
-        with open(config_path, "r") as f:
+        with open(config_path, "r", encoding="utf-8") as f:
             self.config = yaml.safe_load(f)
         self.indicators = self._parse_indicators()
         logger.info(f"Loaded {len(self.indicators)} indicators from logframe")
