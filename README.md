@@ -61,6 +61,7 @@ pip install -r requirements.txt
 
 # Run dashboard
 streamlit run dashboards/app.py
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://dtrcnsfvqyxoj4cpysc9yk.streamlit.app/)
 ```
 
 ## 📁 Project Structure
