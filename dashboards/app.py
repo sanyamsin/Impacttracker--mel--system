@@ -158,6 +158,6 @@ else:
 
 st.divider()
 st.caption(
-    "ImpactTracker v1.0 | Built by Tresor | "
+    "ImpactTracker v1.0 | Built by Serge Nyamsin | "
     "MSc Data Science & AI, DSTI | Innovation Center Kosovo"
 )
