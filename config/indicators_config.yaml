@@ -1,0 +1,52 @@
+# ImpactTracker - Logframe Indicators Configuration
+# Program: Kosovo Education & Livelihood Support
+# Version: 1.0
+
+program: "Kosovo Education & Livelihood Support"
+version: "1.0"
+reporting_period: "2025"
+donor: "ECHO"
+implementing_partner: "Innovation Center Kosovo"
+
+indicators:
+  # ── OUTPUTS ──────────────────────────────────────────────────
+  - code: "OUT_001"
+    name: "# of beneficiaries who received vocational training"
+    level: "Output"
+    target: 400
+    unit: "persons"
+    method: "sum"
+    disaggregation: ["gender", "age_group", "location"]
+
+  - code: "OUT_002"
+    name: "# of training sessions conducted"
+    level: "Output"
+    target: 80
+    unit: "sessions"
+    method: "sum"
+    disaggregation: ["location"]
+
+  - code: "OUT_003"
+    name: "% of beneficiaries with improved skills (post-test)"
+    level: "Output"
+    target: 350
+    unit: "persons"
+    method: "sum"
+    disaggregation: ["gender"]
+
+  # ── OUTCOMES ─────────────────────────────────────────────────
+  - code: "OUTC_001"
+    name: "% of graduates employed within 6 months"
+    level: "Outcome"
+    target: 300
+    unit: "persons"
+    method: "count"
+    disaggregation: ["gender", "age_group"]
+
+  - code: "OUTC_002"
+    name: "% of beneficiaries reporting improved livelihoods"
+    level: "Outcome"
+    target: 250
+    unit: "persons"
+    method: "sum"
+    disaggregation: ["gender", "location"]
