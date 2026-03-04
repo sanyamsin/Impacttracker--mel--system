@@ -1,0 +1,28 @@
+# ImpactTracker - Thresholds & Alert Configuration
+
+thresholds:
+  on_track: 0.85      # >= 85% → On Track ✅
+  at_risk: 0.60       # >= 60% → At Risk ⚠️
+  critical: 0.00      # <  60% → Critical 🔴
+
+# Seuils spécifiques par indicateur (override global)
+indicator_overrides:
+  OUTC_001:
+    at_risk: 0.70     # Outcome plus sensible
+    critical: 0.50
+  OUTC_002:
+    at_risk: 0.70
+    critical: 0.50
+
+notifications:
+  email_enabled: false
+  slack_enabled: false
+  report_frequency: "weekly"   # daily / weekly / monthly
+  alert_recipients:
+    - "mel.officer@organization.org"
+    - "program.manager@organization.org"
+
+reporting:
+  auto_generate: true
+  formats: ["csv", "excel"]
+  output_dir: "data/reports/"
