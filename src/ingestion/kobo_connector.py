@@ -1,14 +1,16 @@
 """
 ImpactTracker - KoboToolbox API Connector
 Pulls survey data directly from KoboToolbox for automated MEL processing.
-Author: Tresor | MSc Data Science & AI, DSTI
+Author: Serge Nyamsin | MSc Data Science & AI, DSTI
 """
 
 import requests
 import pandas as pd
 import logging
 from typing import Optional
-from config.settings import KOBO_API_TOKEN, KOBO_BASE_URL
+import os
+KOBO_API_TOKEN = os.getenv("KOBO_API_TOKEN", "your_token_here")
+KOBO_BASE_URL = os.getenv("KOBO_BASE_URL", "https://kobo.humanitarianresponse.info")
 
 logger = logging.getLogger(__name__)
 
